@@ -4,3 +4,8 @@ Commands:
     3. flutter pub get
     4. flutter pub upgrade
     5. flutter --help
+    6. flutter 
+
+// Settings --> Build --> tap on it for 7 times ---> enable developer options
+// Settings --> Developer options --> enable USB debugging (pop up)
+// Settings --> USB options --> MIDI support
