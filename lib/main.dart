@@ -2,36 +2,25 @@ import 'package:flutter/material.dart';
 // included in almost all the pages - Material Theme UI
 import 'package:restaurant/auth/signin.dart';
 import 'package:restaurant/auth/signup.dart';
+import 'package:restaurant/pages/dashboard.dart';
+import 'package:restaurant/pages/welcome.dart';
+
+// welcome, sigin, signup, resetpage, home
 
 void main() {
   runApp(MaterialApp(
-    home: SignInPage(),
-    debugShowCheckedModeBanner: false,
+    home: RestaurantHomePage(),
+    debugShowCheckedModeBanner:
+        true, //show or hide the debug banner at the top right corner
     routes: {
       'signin': (context) => SignInPage(),
       'signup': (context) => SignUpPage(),
-      // 'dashboard': (context) => DashBoardPage(),
+      'dashboard': (context) => RestaurantHomePage(),
     },
   ));
 }
 
 // BuildContext context
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
