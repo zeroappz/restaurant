@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:restaurant/auth/signin.dart';
 import 'package:restaurant/auth/signup.dart';
 import 'package:restaurant/pages/dashboard.dart';
-import 'package:restaurant/pages/welcome.dart';
+// import 'package:restaurant/pages/welcome.dart';
 
 // welcome, sigin, signup, resetpage, home
 

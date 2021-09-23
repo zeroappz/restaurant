@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
+import 'package:restaurant/values/values.dart';
+
 
 final TextStyle blackText = TextStyle(color: Colors.black);
 final TextStyle whiteText = TextStyle(color: Colors.white);
@@ -18,27 +20,33 @@ class _RestaurantHomePageState extends State<RestaurantHomePage> {
   @override
   Widget build(BuildContext context) {
     Widget _imageCarousel = Container(
-        height: 200,
+        height: Sizes.HEIGHT_200,
         child: Carousel(
           boxFit: BoxFit.fill,
           images: [
-            AssetImage('assets/Vegetables.png'),
-            AssetImage('assets/Bakery.png'),
-            AssetImage('assets/Foodgrains.png'),
-            AssetImage('assets/Household.png'),
+            AssetImage(ImagePath.houseImg),
+            AssetImage(ImagePath.vegImg),
+            AssetImage(ImagePath.bakeryImg),
+            AssetImage(ImagePath.foodImg)
           ],
           animationDuration: Duration(milliseconds: 2000),
           autoplay: true,
           animationCurve: Curves.fastOutSlowIn,
+          dotSize: Sizes.SIZE_4,
+          dotSpacing: Sizes.SIZE_12,
+          dotColor: Colors.redAccent,
+          indicatorBgPadding: Sizes.SIZE_6,
+          dotBgColor: AppColorsConst.secondaryColor,
+          borderRadius: true,
         ));
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueAccent,
-        title: const Text('Flipkart'),
+        backgroundColor: AppColorsConst.appBarColor,
+        title: Text(StringConstant.APP_NAME),
         actions: [
           IconButton(
               onPressed: () {
-                print('search button pressed');
+                // print('search button pressed');
               },
               icon: const Icon(Icons.search, color: Colors.white)),
           IconButton(
@@ -50,7 +58,7 @@ class _RestaurantHomePageState extends State<RestaurantHomePage> {
         child: ListView(
           children: [
             UserAccountsDrawerHeader(
-              accountName: const Text('Praveen Kumar'),
+              accountName: const Text(StringConstant.DEFAULT_USER_NAME),
               accountEmail: const Text('pravileaf@gmail'),
               currentAccountPicture: GestureDetector(
                 child: CircleAvatar(
@@ -132,7 +140,7 @@ class _RestaurantHomePageState extends State<RestaurantHomePage> {
             const InkWell(
               child: ListTile(
                 title: Text(
-                  'Version 0.0.1',
+                  StringConstant.APP_VERSION,
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.w500),
                 ),
               ),
@@ -312,7 +320,7 @@ Widget _brandsList(BuildContext context) {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(7),
           image: DecorationImage(
-              image: AssetImage('assets/Household.png'), fit: BoxFit.cover),
+              image: AssetImage('assets/Vegetables.png'), fit: BoxFit.cover),
         ),
         alignment: Alignment.center,
         width: 100,

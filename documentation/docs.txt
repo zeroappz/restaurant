@@ -55,3 +55,15 @@ CustomButton(onTap: onPress:)
 FlatButton(onPressed: ())
 TextButton(onPressed: ())
 IconButton(onPressed: ())
+
+
+Create Library:
+Create a folder - keep a list of files in to it.
+    - values.dart : include --> library values;
+        - add files by giving prefix as --> part 'strings.dart';
+        - add files by giving prefix as --> part 'colors.dart';
+    - strings.dart: include --> part of values;
+    - colors.dart: include --> part of values;
+
+
+Creating Dark/Light Theme using theme.dart
