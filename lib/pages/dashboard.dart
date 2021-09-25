@@ -41,7 +41,7 @@ class _RestaurantHomePageState extends State<RestaurantHomePage> {
         ));
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColorsConst.appBarColor,
+        backgroundColor: AppColorsConst.primaryColor,
         title: Text(StringConstant.APP_NAME),
         actions: [
           IconButton(

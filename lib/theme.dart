@@ -42,7 +42,7 @@ ThemeData _lightTheme(BuildContext context) {
         buttonColor: AppColorsConst.secondaryColor,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(Sizes.RADIUS_8))),
-    bottomAppBarTheme: BottomAppBarTheme(elevation: Sizes.ELEVATIONS_4),
+    bottomAppBarTheme: BottomAppBarTheme(elevation: Sizes.ELEVATION_4),
   );
   return base;
 }
@@ -74,7 +74,7 @@ ThemeData _darkTheme(BuildContext context) {
         buttonColor: AppColorsConst.secondaryColor,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(Sizes.RADIUS_8))),
-    bottomAppBarTheme: BottomAppBarTheme(elevation: Sizes.ELEVATIONS_4),
+    bottomAppBarTheme: BottomAppBarTheme(elevation: Sizes.ELEVATION_4),
   );
   return base;
 }
@@ -85,17 +85,17 @@ TextTheme _textTheme(BuildContext context) {
   return GoogleFonts.josefinSansTextTheme(textTheme).copyWith(
     headline1: GoogleFonts.josefinSans(
         fontSize: Sizes.SIZE_36,
-        color: AppColorsConst.primarytext,
+        color: AppColorsConst.primaryText,
         fontWeight: FontWeight.bold,
         fontStyle: FontStyle.normal),
     headline2: GoogleFonts.josefinSans(
         fontSize: Sizes.SIZE_24,
-        color: AppColorsConst.primarytext,
+        color: AppColorsConst.primaryText,
         fontWeight: FontWeight.w600,
         fontStyle: FontStyle.normal),
     headline3: GoogleFonts.josefinSans(
         fontSize: Sizes.SIZE_20,
-        color: AppColorsConst.primarytext,
+        color: AppColorsConst.primaryText,
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.normal),
   );
