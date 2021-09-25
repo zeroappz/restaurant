@@ -12,6 +12,7 @@ class ImagePath {
 
   // Generic Images
   static const String personImg = "$imageDir/person.png";
+  static const String chineseImg = "assets/images/chinese.png";
 
   // Product Images
   static const String vegImg = "$imageDir/Vegetables.png";

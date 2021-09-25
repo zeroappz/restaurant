@@ -22,9 +22,12 @@ class StringConstant {
   static const String TURN_GPS_DESCRIPTION =
       "Please turn on your GPS to find out better restaurant suggestionsnear you.";
   static const String HELLO_MESSAGE = "Hi David,";
+  static const String HOME_TITLE = "What would you like to have?";
   static const String WELCOME_MESSAGE = "Welcome to";
   static const String SEND = "Send";
+  static const String SEARCH = "Search";
   static const String TRENDING_RESTAURANTS = "Trending Restaurants";
+  static const String POPULAR_FOOD = "Popular Foods";
   static const String CATEGORY = "Category";
   static const String FRIENDS = "Friends";
   static const String MENU_AND_PHOTOS = "Menu & Photos";
@@ -50,6 +53,11 @@ class StringConstant {
   static const String TAMIL = "Tamil";
   static const String TELUGU = "Telugu";
   static const String APP_VERSION = 'Version 0.0.1';
+  static const String HOME = 'Home';
+  static const String NEAR_BY = 'Near By';
+  static const String CART = 'Cart';
+  static const String PROFILE = 'Profile';
+        
 
 
   //Font Family

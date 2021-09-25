@@ -67,3 +67,9 @@ Create a folder - keep a list of files in to it.
 
 
 Creating Dark/Light Theme using theme.dart
+
+Creating and Accessing Widgets:
+    1. Create Separate(generic) widget ----> STFUL or STLESS 
+        -- use it throught out the application via instantiation
+    2. Create  Widget on the same page as variable or function
+        -- use it in same file also use import for other files as well.

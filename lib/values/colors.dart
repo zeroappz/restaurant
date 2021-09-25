@@ -4,6 +4,7 @@ class AppColorsConst {
   static const Color primaryColor =
       Color.fromARGB(255, 255, 255, 255); //Color(0xFFFFFFFF)
   static const Color secondaryColor = Color.fromARGB(255, 246, 247, 255);
+  static const Color searchHintColor = Color(0xFF000000);
   static const Color ternaryBackground = Color.fromARGB(255, 238, 247, 255);
   static const Color primaryElement = Color.fromARGB(255, 255, 255, 255);
   static const Color secondaryElement = Color.fromARGB(255, 86, 99, 255);
