@@ -26,19 +26,19 @@ class CustomAppBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       elevation: Sizes.ELEVATION_0,
-      leading: hasLeading ? (leading ?? _defaultLeading()) : null,
+      leading: hasLeading ? (leading ?? defaultLeading()) : null,
       centerTitle: true,
       title: Text(title,
           style: TextStyle(
               color: AppColorsConst.headingText,
               fontWeight: FontWeight.w600,
               fontSize: Sizes.TEXT_SIZE_20)),
-      actions: hasLeading ? (trailing ?? _defaultTrailing()) : null,
+      actions: hasLeading ? (trailing ?? defaultTrailing()) : null,
     );
   }
 
   // defaultLeading()
-  Widget _defaultLeading() {
+  Widget defaultLeading() {
     return InkWell(
         onTap: () {},
         // child: Image.asset()
@@ -46,7 +46,7 @@ class CustomAppBarWidget extends StatelessWidget {
   }
 
   // defaultTrailing()
-  List<Widget> _defaultTrailing() {
+  List<Widget> defaultTrailing() {
     return <Widget>[
       InkWell(
           onTap: () {},

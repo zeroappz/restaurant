@@ -4,7 +4,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 import 'package:restaurant/animations/navigateAnimation.dart';
 import 'package:restaurant/values/values.dart';
 import 'package:restaurant/widgets/bottomNavigationBar.dart';
-import 'package:restaurant/widgets/customAppBar.dart';
+// import 'package:restaurant/widgets/customAppBar.dart';
 import 'package:restaurant/widgets/searchWidgets.dart';
 import 'package:restaurant/widgets/popularFoods.dart';
 import 'package:restaurant/auth/signin.dart';
@@ -48,6 +48,7 @@ class _RestaurantHomePageState extends State<RestaurantHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
+        iconTheme: IconThemeData(color: AppColorsConst.black),
         // title: Text(StringConstant.APP_NAME),
         title: Text(StringConstant.HOME_TITLE,
             style: TextStyle(
@@ -85,7 +86,8 @@ class _RestaurantHomePageState extends State<RestaurantHomePage> {
               ),
               decoration: const BoxDecoration(color: Colors.blueAccent),
             ),
-            const InkWell(
+            InkWell(
+              onTap: () {},
               child: ListTile(
                 title: Text(
                   'Home',
@@ -115,10 +117,11 @@ class _RestaurantHomePageState extends State<RestaurantHomePage> {
                 leading: Icon(Icons.shopping_basket),
               ),
             ),
-            const InkWell(
+            InkWell(
+              onTap: () => {Navigator.pushNamed(context, 'category')},
               child: ListTile(
                 title: Text(
-                  'Favorites',
+                  'Category',
                   style: TextStyle(
                       fontSize: Sizes.SIZE_16, fontWeight: FontWeight.w500),
                 ),
@@ -283,6 +286,9 @@ class _RestaurantHomePageState extends State<RestaurantHomePage> {
 
 Widget _featuredList(BuildContext context) {
   return InkWell(
+    onTap: () {
+        Navigator.pushNamed(context, 'category');
+      },
       child: Column(
     children: <Widget>[
       Container(

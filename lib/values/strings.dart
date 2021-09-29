@@ -25,6 +25,8 @@ class StringConstant {
   static const String HOME_TITLE = "What would you like to have?";
   static const String WELCOME_MESSAGE = "Welcome to";
   static const String SEND = "Send";
+  static const String PRODUCT_LIST = "Products List";
+  static const String PRODUCT_DETAILS = "Product Details";
   static const String SEARCH = "Search";
   static const String TRENDING_RESTAURANTS = "Trending Restaurants";
   static const String POPULAR_FOOD = "Popular Foods";
@@ -57,8 +59,6 @@ class StringConstant {
   static const String NEAR_BY = 'Near By';
   static const String CART = 'Cart';
   static const String PROFILE = 'Profile';
-        
-
 
   //Font Family
   static const String FONT_FAMILY = "Josefin Sans";
