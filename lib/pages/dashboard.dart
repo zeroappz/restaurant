@@ -128,6 +128,17 @@ class _RestaurantHomePageState extends State<RestaurantHomePage> {
                 leading: Icon(Icons.favorite),
               ),
             ),
+            InkWell(
+              onTap: () => {Navigator.pushNamed(context, 'address')},
+              child: ListTile(
+                title: Text(
+                  'Cart',
+                  style: TextStyle(
+                      fontSize: Sizes.SIZE_16, fontWeight: FontWeight.w500),
+                ),
+                leading: Icon(Icons.favorite),
+              ),
+            ),
             const InkWell(
               child: ListTile(
                 title: Text(

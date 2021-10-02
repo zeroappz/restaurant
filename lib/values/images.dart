@@ -16,6 +16,7 @@ class ImagePath {
 
   // Product Images
   static const String vegImg = "$imageDir/Vegetables.png";
+  static const String headerImg = "$imageDir/header.png";
   static const String bakeryImg = "$imageDir/Bakery.png";
   static const String foodImg = "$imageDir/Foodgrains.png";
   static const String houseImg = "$imageDir/Household.png";

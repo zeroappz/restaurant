@@ -7,6 +7,7 @@ import 'package:restaurant/pages/categoryList.dart';
 import 'package:restaurant/pages/dashboard.dart';
 import 'package:restaurant/pages/productsList.dart';
 import 'package:restaurant/pages/welcome.dart';
+import 'package:restaurant/pages/checkout.dart';
 // import 'package:restaurant/pages/welcome.dart';
 
 // welcome, sigin, signup, resetpage, home
@@ -15,7 +16,7 @@ void main() {
   runApp(MaterialApp(
     home: WelcomePage(),
     debugShowCheckedModeBanner:
-        true, //show or hide the debug banner at the top right corner
+        false, //show or hide the debug banner at the top right corner
     routes: {
       'signin': (context) => SignInPage(),
       'signup': (context) => SignUpPage(),
@@ -23,22 +24,13 @@ void main() {
       'category': (context) => CategoryListPage(),
       'products': (context) => ProductListPage(),
       'products_detail': (context) => ProductDetailsPage(),
+      'address': (context) => AddressPage(),
+      'payment': (context) => AddressPage(),
     },
   ));
 }
 
 // BuildContext context
-
-
-
-
-
-
-
-
-
-
-
 
 
 // login page, register - others
