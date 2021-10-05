@@ -27,6 +27,9 @@ class StringConstant {
   static const String SEND = "Send";
   static const String PRODUCT_LIST = "Products List";
   static const String PRODUCT_DETAILS = "Product Details";
+  static const String OEM = "Manufacturer";
+  static const String ADD_TO_CART = "Add To Cart";
+  static const String PROD_SPECS = "Specifications";
   static const String SEARCH = "Search";
   static const String TRENDING_RESTAURANTS = "Trending Restaurants";
   static const String POPULAR_FOOD = "Popular Foods";
