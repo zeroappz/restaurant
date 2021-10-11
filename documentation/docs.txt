@@ -74,12 +74,69 @@ Creating and Accessing Widgets:
     2. Create  Widget on the same page as variable or function
         -- use it in same file also use import for other files as well.
 
+API - 
+http or https - (Peer-to-peer connections, SMS, Payment, Map) 
 
-Sushanth 
-Siva Priya
-Jithu
-Gandu Pavan
-Indupuru Viswanada
-Saipriya vempali
-Dumpali
-Vignesh
+
+// Application Server - php, nodejs, python - 5kb - 1TB (INR 12000)
+// Media Server - Youtube,  ($5000 - $90000) - 1Gb (100TB)
+// Stun/Turn Servers or Signalling Servers - 
+// localserver - Apache(Xampp) - Nginx, Node (Express)
+
+
+Flutter - API - Model (data conversion) - View (UI)
+// Nodejs - https://nodejs.org
+
+
+CORS: disabled
+
+// result["Result"]  => "true"
+    
+    if(
+    (
+    result[
+        "Result"
+    ] == "true" && 
+    result[
+        "ResponseCode"
+    ] == "200")
+    ){
+        // truth statement
+    }else{
+        // error statement
+    }
+
+import 'dart:convert';
+JSON, CSV - object --> Dart Object (Map, List, Dynamic)
+
+import 'dart:async';
+
+// future, factory, async, await, snapshot
+
+Task 1 and Task 2: sync;; task 2 will wait until Task 1 completed
+Async - 
+
+Await - wait here until the particular function is finshed, you will get the result
+
+Future - you can get the result for sure from your async function, then() or error()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
