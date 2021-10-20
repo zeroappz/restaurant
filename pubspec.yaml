@@ -18,6 +18,9 @@ dependencies:
   font_awesome_flutter: 9.1.0
   animation_wrappers: ^0.0.1
   http: ^0.13.4
+  shared_preferences: 2.0.8
+  provider: 6.0.1
+
   
 
 dev_dependencies:

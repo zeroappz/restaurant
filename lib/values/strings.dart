@@ -25,6 +25,7 @@ class StringConstant {
   static const String HOME_TITLE = "What would you like to have?";
   static const String WELCOME_MESSAGE = "Welcome to";
   static const String SEND = "Send";
+  static const String SUBMIT = "Submit";
   static const String PRODUCT_LIST = "Products List";
   static const String PRODUCT_DETAILS = "Product Details";
   static const String OEM = "Manufacturer";
@@ -65,4 +66,6 @@ class StringConstant {
 
   //Font Family
   static const String FONT_FAMILY = "Josefin Sans";
+
+  static const String LOADING_DATA = "Loading data...";
 }

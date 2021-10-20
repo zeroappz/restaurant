@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:restaurant/auth/signin.dart';
 import 'package:restaurant/auth/signup.dart';
 import 'package:restaurant/pages/ProductDetails.dart';
+import 'package:restaurant/pages/basicFormHandlings.dart';
 import 'package:restaurant/pages/cartPage.dart';
 import 'package:restaurant/pages/categoryList.dart';
 import 'package:restaurant/pages/dashboard.dart';
-import 'package:restaurant/pages/localApiDataAccess.dart';
+// import 'package:restaurant/pages/localApiDataAccess.dart';
 import 'package:restaurant/pages/productsList.dart';
 import 'package:restaurant/pages/profile.dart';
-import 'package:restaurant/pages/welcome.dart';
+//import 'package:restaurant/pages/welcome.dart';
 import 'package:restaurant/pages/checkout.dart';
-// import 'package:restaurant/pages/welcome.dart';
 // welcome, sigin, signup, resetpage, home
 
 // Accessing API data
@@ -20,7 +20,7 @@ import 'package:restaurant/pages/checkout.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: MyApp(),
+    home: FormValidation(),
     debugShowCheckedModeBanner:
         false, //show or hide the debug banner at the top right corner
     routes: {
