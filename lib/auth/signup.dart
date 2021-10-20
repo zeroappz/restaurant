@@ -37,13 +37,13 @@ class _SignUpPageState extends State<SignUpPage> {
     _formKey.currentState!.save();
 
     try {
-      await Provider.of<Auth>(context, listen: false)
-          .signUp(_authData['mobile'], _authData['password'])
-          .then(() {
-        Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => RestaurantHomePage()));
-        Navigator.of(context).pop();
-      });
+      // await Provider.of<Auth>(context, listen: false)
+      //     .signUp(_authData['mobile'], _authData['password'])
+      //     .then(() {
+      //   Navigator.of(context).pushReplacement(
+      //       MaterialPageRoute(builder: (context) => RestaurantHomePage()));
+      //   Navigator.of(context).pop();
+      // });
     } on HttpException catch (errObj) {
       var errorMessage = 'Authentication Failed';
       if (errObj.toString().contains('MOBILE_EXISTS')) {
