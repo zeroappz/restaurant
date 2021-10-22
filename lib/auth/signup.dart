@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:provider/provider.dart';
-import 'package:restaurant/pages/dashboard.dart';
+// import 'package:provider/provider.dart';
+// import 'package:restaurant/pages/dashboard.dart';
 import 'package:restaurant/values/values.dart';
 import 'package:restaurant/api/httpException.dart';
-import 'package:restaurant/auth/auth.dart';
+// import 'package:restaurant/auth/auth.dart';
 
 class SignUpPage extends StatefulWidget {
   // const SignUpPage({Key? key}) : super(key: key);
@@ -31,7 +31,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
   Future _submit() async {
     if (!_formKey.currentState!.validate()) {
-      // invlaid data for registration
+      // invalid data for registration
       return;
     }
     _formKey.currentState!.save();

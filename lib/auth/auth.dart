@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 import 'package:restaurant/api/api.dart';
-import 'package:restaurant/values/values.dart';
-import 'package:restaurant/api/httpException.dart';
+// import 'package:restaurant/values/values.dart';
+// import 'package:restaurant/api/httpException.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Auth with ChangeNotifier {

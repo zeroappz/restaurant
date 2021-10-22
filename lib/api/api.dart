@@ -4,12 +4,12 @@ class Api {
 
   static const BASE_URL = 'https://packme.shop/grocery/api';
   // auth api
-  static const LOGIN_API = '${BASE_URL}/login.php';
-  static const REGISTER_API = '${BASE_URL}/register.php';
-  static const USERS_API = '${BASE_URL}/user.php';
+  static const LOGIN_API = '$BASE_URL/login.php';
+  static const REGISTER_API = '$BASE_URL/register.php';
+  static const USERS_API = '$BASE_URL/user.php';
 
   // PRODUCTS API
-  static const PRODUCTS_API = '${BASE_URL}/plist.php';
+  static const PRODUCTS_API = '$BASE_URL/plist.php';
 
   // 28 API access
 }

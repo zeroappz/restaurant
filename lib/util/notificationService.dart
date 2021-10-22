@@ -94,3 +94,4 @@ class NotificationService {
 Future<dynamic> selectNotification(String payload) async {
   // Logic
 }
+

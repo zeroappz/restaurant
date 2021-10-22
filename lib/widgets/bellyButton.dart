@@ -34,6 +34,7 @@ class BellyButton extends StatelessWidget {
               Text(label, textAlign: TextAlign.center, style: buttonStyle)
             ],
           ),
-        ));
+        ),
+    );
   }
 }

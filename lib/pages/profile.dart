@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 // import 'package:restaurant/animations/scaleRoute.dart';
 import 'package:restaurant/values/values.dart';
 import 'package:restaurant/widgets/addToCartButton.dart';
-import 'package:restaurant/widgets/bellyButton.dart';
-import 'package:restaurant/widgets/customButton.dart';
+// import 'package:restaurant/widgets/bellyButton.dart';
+// import 'package:restaurant/widgets/customButton.dart';
 import 'package:restaurant/widgets/spaces.dart';
 
 class ProfilePage extends StatelessWidget {
