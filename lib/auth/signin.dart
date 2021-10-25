@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant/values/values.dart';
+import 'package:restaurant/widgets/onSignInWithGoogle.dart';
 // stful, stless, stanim
 class SignInPage extends StatefulWidget {
   const SignInPage({Key? key}) : super(key: key);
@@ -62,6 +63,7 @@ class _SignInPageState extends State<SignInPage> {
                                     SizedBox(
                                       height: 30,
                                     ),
+                                    // AuthenticationWidget(),
                                     Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceBetween,
@@ -114,14 +116,20 @@ class _SignInPageState extends State<SignInPage> {
                                                   decoration:
                                                       TextDecoration.underline),
                                               textAlign: TextAlign.left,
-                                            ))
+                                            ),
+                              ),
                                       ],
-                                    )
+                                    ),
                                   ],
-                                )),
+                                ),
+                    ),
                           ],
-                        ))),
+                        ),
+              ),
+            ),
               ],
-            )));
+            ),
+      ),
+    );
   }
 }

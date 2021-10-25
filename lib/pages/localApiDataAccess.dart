@@ -59,27 +59,53 @@ class _MyAppState extends State<MyApp> {
       title: 'Product List',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: Scaffold(
-          appBar: AppBar(
-            title: const Text(StringConstant.APP_NAME),
-          ),
-          body: Center(
-            child: FutureBuilder<Product>(
-              future: productList,
-              builder: (context, snapshot) {
-                if (snapshot.hasData) {
-                  return Text(snapshot.data!.name.toString() +
-                      ' ' +
-                      snapshot.data!.price.toString() +
-                      '\n' +
-                      snapshot.data!.desc.toString());
-                } else if (snapshot.hasError) {
-                  // return Text('${snapshot.hasError}');
-                  return Text('OOPs!!... no data availble...');
-                }
-                return const CircularProgressIndicator();
-              },
-            ),
-          )),
+        appBar: AppBar(
+          title: const Text(StringConstant.APP_NAME),
+        ),
+        // body: Center(
+        //   child: FutureBuilder<Product>(
+        //     future: productList,
+        //     builder: (context, snapshot) {
+        //       if (snapshot.hasData) {
+        //         return Text(snapshot.data!.name.toString() +
+        //             ' ' +
+        //             snapshot.data!.price.toString() +
+        //             '\n' +
+        //             snapshot.data!.desc.toString());
+        //       } else if (snapshot.hasError) {
+        //         // return Text('${snapshot.hasError}');
+        //         return Text('OOPs!!... no data availble...');
+        //       }
+        //       return const CircularProgressIndicator();
+        //     },
+        //   ),
+        // )),
+        body: FutureBuilder<Product>(
+          future:
+              productList, // you should put here your method that call your web service
+          builder: (BuildContext context, snapshot) {
+            /// The snapshot data type have to be same of the result of your web service method
+            if (snapshot.hasData) {
+              /// When the result of the future call respond and has data show that data
+              return SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: bodyData(snapshot.data),
+              );
+            }
+
+            /// While is no data show this
+            return Center(
+              child: CircularProgressIndicator(
+                backgroundColor: Colors.red[700],
+              ),
+            );
+          },
+        ),
+      ),
     );
   }
+}
+
+Widget bodyData(data) {
+  return Container();
 }

@@ -22,6 +22,14 @@ dependencies:
   provider: 6.0.1
   flutter_local_notifications: 
   date_time_picker: 
+  # For Firebase
+  firebase_core: 
+  firebase_auth: 
+  
+  # Authentication
+  stacked_firebase_auth: 
+  auth_buttons: 
+
 
   
 

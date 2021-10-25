@@ -13,6 +13,8 @@ import 'package:restaurant/pages/profile.dart';
 import 'package:restaurant/pages/welcome.dart';
 import 'package:restaurant/pages/checkout.dart';
 import 'package:restaurant/util/notificationService.dart';
+import 'package:restaurant/widgets/WishListWidget.dart';
+import 'package:restaurant/widgets/imageGallery.dart';
 // import 'package:restaurant/values/values.dart';
 // welcome, sigin, signup, resetpage, home
 
@@ -26,6 +28,7 @@ void main() {
 
   runApp(MaterialApp(
     home: WelcomePage(),
+    //home: GestureTestPage(),
     title: 'Ecommerce',
     theme: ThemeData(
       primarySwatch: Colors.blue,
@@ -183,3 +186,32 @@ void main() {
 //     );
 //   }
 // }
+
+class GestureTestPage extends StatefulWidget {
+  const GestureTestPage({Key? key}) : super(key: key);
+
+  @override
+  _GestureTestPageState createState() => _GestureTestPageState();
+}
+
+class _GestureTestPageState extends State<GestureTestPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Gesture Actions'),
+      ),
+      body: Center(
+          child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          // card based widget - image gallery
+          WishListWidget(),
+          SizedBox(height: 16.0),
+          // icon - double tap and single tap
+          ImageGalleryWidget()
+        ],
+      )),
+    );
+  }
+}

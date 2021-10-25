@@ -162,6 +162,9 @@ Prerequisites:
         5. Include permissions in AndroidManifest.xml 
         6. Include implementations in build.gradle files (project & app level)
         7. firebase plugin installtion in pubspec.yaml
+        8. Run the command to load SHA fingerprint debug key from .android folder
+            keytool -list -v -keystore C:/Users/pravi/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+        
 
 
 
@@ -196,8 +199,18 @@ System Applicaiton: SYSTEM_ALERT_WINDOW
 
 
 
+Gesture Support:
+    1. onTap() - facebook, wishlist - fallback to same or only once
+    2. zoom in and zoom out (pinch)
+    3. doubleTap - instagram
 
-
+Building Paacge File:
+    1. APK - flutter build apk (release)
+    2. AAB - flutter build appbundle (release)
+    3. bundletool build-apks --bundle=/root/myapp.aab --output=/root/myapp.apks
+    4. bundletool build-apks --bundle=/root/myapp.aab --output=/root/myapp.apks --ks=/root/restaurant.jks --ks-pass=file:/root/keystore.pwd --ks-key-alias=restaurant --key-pass=/root/key.pwd
+    5. Deploy apk to a connected device: 
+        bundletool install-apks --apks=/root/myapp.apks
 
 
 
