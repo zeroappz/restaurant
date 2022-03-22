@@ -25,7 +25,7 @@
 //                   icon: Icon(
 //                     FontAwesomeIcons.arrowLeft,
 //                     color: AppColorsConst.black,
-//                   )),
+//                   ),),
 //               title: Text(
 //                 StringConstant.CART,
 //                 // {$product_name},
@@ -35,13 +35,13 @@
 //               actions: <Widget>[
 //                 IconButton(
 //                     onPressed: () =>
-//                         Navigator.push(context, ScaleRoute(CartPage())),
+//                         Navigator.push(context, ScaleRoute(CartPage()),),
 //                     icon: Icon(
 //                       FontAwesomeIcons.shoppingBag,
 //                       color: AppColorsConst.black,
 //                     ))
-//               ]),
-//         ));
+//               ],),
+//         ),);
 //   }
 // }
 
@@ -121,7 +121,8 @@ class _CartPageState extends State<CartPage> {
                                     items[index].img, // list images
                                     height: 95,
                                   ),
-                                )),
+                              ),
+                            ),
                             SizedBox(
                               width: 15,
                             ),
@@ -194,7 +195,7 @@ class _CartPageState extends State<CartPage> {
                             onPressed: () {
 //                            Scaffold.of(context).showSnackBar(new SnackBar(
 //                                content: new Text('Promo Code Applied!')
-//                            ));
+//                            ),);
                             },
                             child: Text(
                               'Apply',
@@ -204,7 +205,8 @@ class _CartPageState extends State<CartPage> {
                           ),
                           border: OutlineInputBorder(
                             borderSide: BorderSide.none,
-                          )),
+                        ),
+                      ),
                     ),
                     SizedBox(
                       height: 5,
@@ -238,7 +240,8 @@ class _CartPageState extends State<CartPage> {
                                   style: TextStyle(
                                       fontSize: 14,
                                       color: Colors.grey[100],
-                                      fontWeight: FontWeight.w500)),
+                                    fontWeight: FontWeight.w500),
+                              ),
                               Spacer(
                                 flex: 1,
                               ),
@@ -289,7 +292,8 @@ class _CartPageState extends State<CartPage> {
       height: 35,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(50),
-          border: Border.all(color: Colors.grey, width: 0)),
+        border: Border.all(color: Colors.grey, width: 0),
+      ),
       child: IconButton(
         onPressed: () {
           setState(() {

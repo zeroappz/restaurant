@@ -87,7 +87,8 @@ class Auth with ChangeNotifier {
             "ccode": "+91",
             "imei": "9c1cfe6955491780",
             "password": password
-          }));
+        }),
+      );
 
       final responseData = jsonDecode(response.body);
       print(responseData);

@@ -39,7 +39,8 @@ class _ProductListPageState extends State<ProductListPage> {
                   FontAwesomeIcons.shoppingBag,
                   color: AppColorsConst.black,
                 ))
-          ]),
+        ],
+      ),
       body: Container(
           margin: EdgeInsets.symmetric(
             horizontal: Sizes.MARGIN_16,
@@ -57,13 +58,15 @@ class _ProductListPageState extends State<ProductListPage> {
                             fit: BoxFit.cover),
                       ),
                       () => Navigator.push(
-                          context, ScaleRoute(ProductDetailsPage()))),
+                          context, ScaleRoute(ProductDetailsPage())),
+                ),
                 );
               },
               separatorBuilder: (context, index) {
                 return SpacesHeight16();
               },
-              itemCount: 6)),
+            itemCount: 6),
+      ),
       bottomNavigationBar: BottomBarNavigation(),
     );
   }

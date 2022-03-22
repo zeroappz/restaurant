@@ -19,7 +19,10 @@ class AddToCartButton extends StatelessWidget {
             iconSize: Sizes.SIZE_24,
           ),
           InkWell(
-            onTap: () => Navigator.push(context, ScaleRoute(CartPage())),
+            onTap: () => Navigator.push(
+              context,
+              ScaleRoute(CartPage()),
+            ),
             child: Container(
               height: Sizes.HEIGHT_48,
               width: Sizes.WIDTH_200,
@@ -27,7 +30,8 @@ class AddToCartButton extends StatelessWidget {
                   borderRadius: BorderRadius.circular(Sizes.RADIUS_12),
                   color: Colors.redAccent,
                   border:
-                      Border.all(width: Sizes.WIDTH_1, color: Colors.white)),
+                      Border.all(width: Sizes.WIDTH_1, color: Colors.white),
+              ),
               child: Center(
                 child: Text(
                   StringConstant.ADD_TO_CART,

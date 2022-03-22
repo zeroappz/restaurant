@@ -41,7 +41,8 @@ ThemeData _lightTheme(BuildContext context) {
         textTheme: ButtonTextTheme.primary,
         buttonColor: AppColorsConst.secondaryColor,
         shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(Sizes.RADIUS_8))),
+          borderRadius: BorderRadius.circular(Sizes.RADIUS_8)),
+    ),
     bottomAppBarTheme: BottomAppBarTheme(elevation: Sizes.ELEVATION_4),
   );
   return base;
@@ -73,7 +74,8 @@ ThemeData _darkTheme(BuildContext context) {
         textTheme: ButtonTextTheme.primary,
         buttonColor: AppColorsConst.secondaryColor,
         shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(Sizes.RADIUS_8))),
+          borderRadius: BorderRadius.circular(Sizes.RADIUS_8)),
+    ),
     bottomAppBarTheme: BottomAppBarTheme(elevation: Sizes.ELEVATION_4),
   );
   return base;

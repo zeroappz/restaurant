@@ -45,7 +45,8 @@ class _AddressPageState extends State<AddressPage> {
                     FontAwesomeIcons.arrowLeft,
                     color: Colors.white,
                   ),
-                  padding: EdgeInsets.only(top: 68)),
+                  padding: EdgeInsets.only(top: 68),
+                ),
               Positioned.directional(
                   textDirection: Directionality.of(context),
                   top: 70.0,
@@ -55,7 +56,8 @@ class _AddressPageState extends State<AddressPage> {
                           fontWeight: FontWeight.w500,
                           fontSize: Sizes.TEXT_SIZE_18,
                           color: Theme.of(context).scaffoldBackgroundColor,
-                          letterSpacing: 1.0))),
+                          letterSpacing: 1.0)),
+                ),
               Positioned.directional(
                   top: 130.0,
                   textDirection: Directionality.of(context),
@@ -67,17 +69,20 @@ class _AddressPageState extends State<AddressPage> {
                       Text('....',
                           style: TextStyle(
                               color: Colors.grey.shade400,
-                              fontSize: Sizes.TEXT_SIZE_40)),
+                              fontSize: Sizes.TEXT_SIZE_40),
+                        ),
                       Icon(Icons.credit_card, color: Colors.white),
                       Text('....',
                           style: TextStyle(
                               color: Colors.grey.shade400,
-                              fontSize: Sizes.TEXT_SIZE_40)),
+                              fontSize: Sizes.TEXT_SIZE_40),
+                        ),
                       Icon(Icons.person, color: Colors.white),
                       Text('....',
                           style: TextStyle(
                               color: Colors.grey.shade400,
-                              fontSize: Sizes.TEXT_SIZE_40)),
+                              fontSize: Sizes.TEXT_SIZE_40),
+                        ),
                       Icon(Icons.home, color: Colors.white),
                     ],
                   ))
@@ -122,7 +127,8 @@ class _AddressPageState extends State<AddressPage> {
                         ],
                       )
                     ],
-                  ));
+                  ),
+                );
             },
           ),
           Spacer(),
@@ -140,6 +146,7 @@ class _AddressPageState extends State<AddressPage> {
       beginOffset: Offset(0.0, 0.0),
       endOffset: Offset(0.0, 0.0),
       slideCurve: Curves.linearToEaseOut,
-    ));
+      ),
+    );
   }
 }

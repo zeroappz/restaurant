@@ -22,6 +22,8 @@ class RotationRoute extends PageRouteBuilder {
                 RotationTransition(
                     turns: Tween<double>(begin: 0.0, end: 1.0).animate(
                         CurvedAnimation(
-                            parent: animation, curve: Curves.bounceInOut)),
-                    child: child));
+                        parent: animation, curve: Curves.bounceInOut),
+                  ),
+                  child: child),
+        );
 }

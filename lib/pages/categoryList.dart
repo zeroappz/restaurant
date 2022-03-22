@@ -38,7 +38,8 @@ class _CategoryListPageState extends State<CategoryListPage> {
                   FontAwesomeIcons.search,
                   color: AppColorsConst.black,
                 ))
-          ]),
+        ],
+      ),
       body: Container(
           margin: EdgeInsets.symmetric(
             horizontal: Sizes.MARGIN_16,
@@ -56,13 +57,15 @@ class _CategoryListPageState extends State<CategoryListPage> {
                             fit: BoxFit.cover),
                       ),
                       () => Navigator.push(
-                          context, ScaleRoute(ProductListPage()))),
+                          context, ScaleRoute(ProductListPage())),
+                ),
                 );
               },
               separatorBuilder: (context, index) {
                 return SpacesHeight16();
               },
-              itemCount: 6)),
+            itemCount: 6),
+      ),
       bottomNavigationBar: BottomBarNavigation(),
     );
   }

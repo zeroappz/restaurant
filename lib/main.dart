@@ -48,7 +48,8 @@ void main() {
       'address': (context) => AddressPage(),
       'profile': (context) => ProfilePage(),
     },
-  ));
+    ),
+  );
 }
 
 // BuildContext context
@@ -88,7 +89,7 @@ void main() {
 //         ),
 //         body: Container(
 //             alignment: Alignment.center,
-//             child: Text('Restaurant Opened now..!')));
+//             child: Text('Restaurant Opened now..!'),),);
 //   }
 // }
 
@@ -211,7 +212,8 @@ class _GestureTestPageState extends State<GestureTestPage> {
           // icon - double tap and single tap
           ImageGalleryWidget()
         ],
-      )),
+        ),
+      ),
     );
   }
 }

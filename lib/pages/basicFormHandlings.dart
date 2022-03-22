@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 // import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:restaurant/values/values.dart';
 
-void main() => runApp(const FormValidation());
+void main() => runApp(
+      const FormValidation(),
+    );
 
 class FormValidation extends StatelessWidget {
   const FormValidation({Key? key}) : super(key: key);

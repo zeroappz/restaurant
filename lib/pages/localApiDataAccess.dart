@@ -8,11 +8,15 @@ import 'package:restaurant/values/values.dart';
 
 Future<Product> fetchProduct() async {
   final response =
-      await http.get(Uri.parse("http://192.168.29.11:8000/product.json"));
+      await http.get(
+    Uri.parse("http://192.168.29.11:8000/product.json"),
+  );
 
   if (response.statusCode == 200) {
     // parse the JSON value and use it anywhere in the app
-    return Product.fromJson(jsonDecode(response.body));
+    return Product.fromJson(
+      jsonDecode(response.body),
+    );
   } else {
     throw Exception("Failed to load product data");
   }
@@ -30,11 +34,14 @@ class Product {
     return Product(
         name: data[1000]['name'],
         price: data[1000]['price'],
-        desc: data[1000]['desc']);
+      desc: data[1000]['desc'],
+    );
   }
 }
 
-void main() => runApp(const MyApp());
+void main() => runApp(
+      const MyApp(),
+    );
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -71,7 +78,7 @@ class _MyAppState extends State<MyApp> {
         //             ' ' +
         //             snapshot.data!.price.toString() +
         //             '\n' +
-        //             snapshot.data!.desc.toString());
+        //             snapshot.data!.desc.toString(),);
         //       } else if (snapshot.hasError) {
         //         // return Text('${snapshot.hasError}');
         //         return Text('OOPs!!... no data availble...');
@@ -79,7 +86,7 @@ class _MyAppState extends State<MyApp> {
         //       return const CircularProgressIndicator();
         //     },
         //   ),
-        // )),
+        // ),),
         body: FutureBuilder<Product>(
           future:
               productList, // you should put here your method that call your web service

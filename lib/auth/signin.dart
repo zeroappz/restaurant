@@ -15,7 +15,8 @@ class _SignInPageState extends State<SignInPage> {
     return Container(
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage(ImagePath.loginBg), fit: BoxFit.cover)),
+            image: AssetImage(ImagePath.loginBg), fit: BoxFit.cover),
+      ),
         child: Scaffold(
             backgroundColor: Colors.transparent,
             body: Stack(
@@ -25,7 +26,8 @@ class _SignInPageState extends State<SignInPage> {
                     child: Text(
                       'Welcome Dude!',
                       style: TextStyle(color: Colors.black, fontSize: 32),
-                    )),
+              ),
+            ),
                 SingleChildScrollView(
                     child: Container(
                         padding: EdgeInsets.only(
@@ -45,7 +47,8 @@ class _SignInPageState extends State<SignInPage> {
                                           filled: true,
                                           border: OutlineInputBorder(
                                               borderRadius:
-                                                  BorderRadius.circular(22))),
+                                                  BorderRadius.circular(22)),
+                            ),
                                     ),
                                     SizedBox(
                                       height: 30,
@@ -58,7 +61,8 @@ class _SignInPageState extends State<SignInPage> {
                                           filled: true,
                                           border: OutlineInputBorder(
                                               borderRadius:
-                                                  BorderRadius.circular(22))),
+                                                  BorderRadius.circular(22)),
+                            ),
                                     ),
                                     SizedBox(
                                       height: 30,
@@ -103,7 +107,8 @@ class _SignInPageState extends State<SignInPage> {
                                                   decoration:
                                                       TextDecoration.underline),
                                               textAlign: TextAlign.left,
-                                            )),
+                                ),
+                              ),
                                         TextButton(
                                             onPressed: () {
                                               Navigator.pushNamed(

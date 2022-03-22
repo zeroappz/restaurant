@@ -16,7 +16,8 @@ class WelcomePage extends StatelessWidget {
         body: Container(
             decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage('assets/login.png'), fit: BoxFit.cover)),
+              image: AssetImage('assets/login.png'), fit: BoxFit.cover),
+        ),
             child: Padding(
                 padding: const EdgeInsets.all(16),
             child: Center(
@@ -27,13 +28,15 @@ class WelcomePage extends StatelessWidget {
                   height: 320,
                 ),
                 Text('Welcome to \n Restaurant',
-                    style: TextStyle(color: Colors.black, fontSize: 36)),
+                  style: TextStyle(color: Colors.black, fontSize: 36),
+                ),
                 SizedBox(
                   height: 60,
                 ),
                 Text(
                     'Here you can get all type of food...!!!! \n Do not miss it',
-                    style: TextStyle(color: Colors.black, fontSize: 24)),
+                  style: TextStyle(color: Colors.black, fontSize: 24),
+                ),
                 // Spacer(),
                 Padding(
                     padding: const EdgeInsets.all(16),
@@ -49,6 +52,8 @@ class WelcomePage extends StatelessWidget {
                           textAlign: TextAlign.left,
                         )))
               ],
-            )))));
+            ))),
+      ),
+    );
   }
 }

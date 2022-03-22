@@ -41,7 +41,7 @@ class _SignUpPageState extends State<SignUpPage> {
       //     .signUp(_authData['mobile'], _authData['password'])
       //     .then(() {
       //   Navigator.of(context).pushReplacement(
-      //       MaterialPageRoute(builder: (context) => RestaurantHomePage()));
+      //       MaterialPageRoute(builder: (context) => RestaurantHomePage(),),);
       //   Navigator.of(context).pop();
       // });
     } on HttpException catch (errObj) {
@@ -87,7 +87,8 @@ class _SignUpPageState extends State<SignUpPage> {
     return Container(
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage(ImagePath.registerBg), fit: BoxFit.cover)),
+            image: AssetImage(ImagePath.registerBg), fit: BoxFit.cover),
+      ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
@@ -121,7 +122,8 @@ class _SignUpPageState extends State<SignUpPage> {
                                 filled: true,
                                 fillColor: Colors.grey.shade100,
                                 border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(12))),
+                                  borderRadius: BorderRadius.circular(12)),
+                            ),
                           ),
                           SizedBox(
                             height: 30,
@@ -133,7 +135,8 @@ class _SignUpPageState extends State<SignUpPage> {
                                 filled: true,
                                 fillColor: Colors.grey.shade100,
                                 border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(12))),
+                                  borderRadius: BorderRadius.circular(12)),
+                            ),
                           ),
                           SizedBox(
                             height: 30,
@@ -145,7 +148,8 @@ class _SignUpPageState extends State<SignUpPage> {
                                 filled: true,
                                 fillColor: Colors.grey.shade100,
                                 border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(12))),
+                                  borderRadius: BorderRadius.circular(12)),
+                            ),
                           ),
                           SizedBox(
                             height: 30,
@@ -157,7 +161,8 @@ class _SignUpPageState extends State<SignUpPage> {
                                 filled: true,
                                 fillColor: Colors.grey.shade100,
                                 border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(12))),
+                                  borderRadius: BorderRadius.circular(12)),
+                            ),
                           ),
                           SizedBox(
                             height: 30,
@@ -197,7 +202,8 @@ class _SignUpPageState extends State<SignUpPage> {
                                         decoration: TextDecoration.underline,
                                         color: Colors.black),
                                     textAlign: TextAlign.left,
-                                  )),
+                                ),
+                              ),
                             ],
                           )
                         ],

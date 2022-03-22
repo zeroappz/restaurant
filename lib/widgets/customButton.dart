@@ -24,7 +24,10 @@ class _CustomButtonState extends State<CustomButton> {
   Widget build(BuildContext context) {
     return GestureDetector(
         onTap: () {
-          Navigator.push(context, ScaleRoute(widget.onPress));
+        Navigator.push(
+          context,
+          ScaleRoute(widget.onPress),
+        );
         },
         child: Container(
             width: widget.width,
@@ -49,6 +52,8 @@ class _CustomButtonState extends State<CustomButton> {
                       fontWeight: FontWeight.bold),
                 )
               ],
-            )));
+        ),
+      ),
+    );
   }
 }

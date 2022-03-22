@@ -25,7 +25,9 @@ class SearchWidget extends StatelessWidget {
               suffixIcon:
                   Icon(FontAwesomeIcons.sort, color: AppColorsConst.black),
               hintText: StringConstant.SEARCH,
-              hintStyle: new TextStyle(color: AppColorsConst.searchHintColor)),
-        ));
+          hintStyle: new TextStyle(color: AppColorsConst.searchHintColor),
+        ),
+      ),
+    );
   }
 }

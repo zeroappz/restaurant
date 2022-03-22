@@ -31,7 +31,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                   icon: Icon(
                     FontAwesomeIcons.arrowLeft,
                     color: AppColorsConst.black,
-                  )),
+                  ),),
               title: Text(
                 StringConstant.PRODUCT_DETAILS,
                 // {$product_name},
@@ -41,12 +41,12 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
               actions: <Widget>[
                 IconButton(
                     onPressed: () =>
-                        Navigator.push(context, ScaleRoute(CartPage())),
+                        Navigator.push(context, ScaleRoute(CartPage()),),
                     icon: Icon(
                       FontAwesomeIcons.shoppingBag,
                       color: AppColorsConst.black,
                     ))
-              ]),
+              ],),
           body: Container(
             padding: EdgeInsets.only(
                 left: Sizes.PADDING_16, right: Sizes.PADDING_16),
@@ -155,7 +155,7 @@ class ProductTitleWidget extends StatelessWidget {
                 Tab(
                   text: StringConstant.OEM,
                 ),
-              ]),
+              ],),
         ),
         Container(
           height: Sizes.HEIGHT_100,
@@ -242,7 +242,7 @@ class ProdcutSpecsContext extends StatelessWidget {
 //             iconSize: Sizes.SIZE_24,
 //           ),
 //           InkWell(
-//             onTap: () => Navigator.push(context, ScaleRoute(CartPage())),
+//             onTap: () => Navigator.push(context, ScaleRoute(CartPage()),),
 //             child: Container(
 //               height: Sizes.HEIGHT_48,
 //               width: Sizes.WIDTH_200,
@@ -250,7 +250,7 @@ class ProdcutSpecsContext extends StatelessWidget {
 //                   borderRadius: BorderRadius.circular(Sizes.RADIUS_12),
 //                   color: Colors.redAccent,
 //                   border:
-//                       Border.all(width: Sizes.WIDTH_1, color: Colors.white)),
+//                       Border.all(width: Sizes.WIDTH_1, color: Colors.white),),
 //               child: Center(
 //                 child: Text(
 //                   StringConstant.ADD_TO_CART,

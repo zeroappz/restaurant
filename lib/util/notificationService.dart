@@ -50,7 +50,8 @@ class NotificationService {
         "Big Billion Day Offer",
         "Congrats!, Explore more number of offers in the big billion day!...",
         // '$title', '$body',
-        NotificationDetails(android: _androidNotificationDetails));
+      NotificationDetails(android: _androidNotificationDetails),
+    );
   }
 
   // TO show live and local notification
@@ -62,7 +63,8 @@ class NotificationService {
         title,
         desc,
         // '$title', '$body',
-        NotificationDetails(android: _androidNotificationDetails));
+      NotificationDetails(android: _androidNotificationDetails),
+    );
   }
 
   // TO show live and local notification
@@ -73,7 +75,9 @@ class NotificationService {
         "Scheduled Notification!",
         "Holla!, Notification Pushed after 5 seconds...Explore more......",
         // id, '$title', '$body',
-        tz.TZDateTime.now(tz.local).add(const Duration(seconds: 5)),
+        tz.TZDateTime.now(tz.local).add(
+          const Duration(seconds: 5),
+        ),
         NotificationDetails(android: _androidNotificationDetails),
         androidAllowWhileIdle: true,
         uiLocalNotificationDateInterpretation:

@@ -30,6 +30,7 @@ class _PopularFoodWidgetState extends State<PopularFoodWidget> {
         ),
         Text(StringConstant.POPULAR_FOOD),
       ],
-    ));
+      ),
+    );
   }
 }

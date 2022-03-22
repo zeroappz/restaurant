@@ -92,7 +92,7 @@ class ProfilePage extends StatelessWidget {
                   //       borderRadius: BorderRadius.circular(Sizes.RADIUS_12),
                   //       color: Colors.blueAccent,
                   //       border: Border.all(
-                  //           width: Sizes.WIDTH_1, color: Colors.white)),
+                //           width: Sizes.WIDTH_1, color: Colors.white),),
                   // ),
                   // SizedBox(
                   //   width: 16.0,
@@ -106,7 +106,7 @@ class ProfilePage extends StatelessWidget {
                   //       borderRadius: BorderRadius.circular(Sizes.RADIUS_12),
                   //       color: Colors.blueAccent,
                   //       border: Border.all(
-                  //           width: Sizes.WIDTH_1, color: Colors.white)),
+                //           width: Sizes.WIDTH_1, color: Colors.white),),
                   // ),
                   // AddToCartButton(),
 
@@ -116,7 +116,8 @@ class ProfilePage extends StatelessWidget {
               )
             ],
           ),
-        ));
+      ),
+    );
   }
 }
 
@@ -128,7 +129,8 @@ Widget detail(String num, String text) {
           style: TextStyle(
               color: AppColorsConst.black,
               fontWeight: FontWeight.w600,
-              fontSize: Sizes.TEXT_SIZE_18)),
+              fontSize: Sizes.TEXT_SIZE_18),
+        ),
       SizedBox(
         height: Sizes.HEIGHT_8,
       ),
@@ -136,7 +138,9 @@ Widget detail(String num, String text) {
           style: TextStyle(
               color: Colors.blueAccent,
               fontWeight: FontWeight.w600,
-              fontSize: Sizes.TEXT_SIZE_16)),
+              fontSize: Sizes.TEXT_SIZE_16),
+        ),
     ],
-  ));
+    ),
+  );
 }

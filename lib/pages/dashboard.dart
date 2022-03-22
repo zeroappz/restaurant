@@ -45,7 +45,8 @@ class _RestaurantHomePageState extends State<RestaurantHomePage> {
           indicatorBgPadding: Sizes.SIZE_6,
           dotBgColor: AppColorsConst.secondaryColor,
           borderRadius: true,
-        ));
+      ),
+    );
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -55,19 +56,27 @@ class _RestaurantHomePageState extends State<RestaurantHomePage> {
             style: TextStyle(
                 fontSize: Sizes.SIZE_16,
                 fontWeight: FontWeight.w500,
-                color: AppColorsConst.black)),
+              color: AppColorsConst.black),
+        ),
         elevation: 0,
         systemOverlayStyle: SystemUiOverlayStyle.light,
         actions: [
           IconButton(
               onPressed: () {
                 // Navigator.pushNamed(context, 'signin');
-                Navigator.push(context, RotationRoute(SignInPage()));
+              Navigator.push(
+                context,
+                RotationRoute(
+                  SignInPage(),
+                ),
+              );
               },
-              icon: const Icon(Icons.search, color: Colors.black)),
+            icon: const Icon(Icons.search, color: Colors.black),
+          ),
           IconButton(
               onPressed: () {},
-              icon: const Icon(Icons.shopping_bag, color: Colors.black)),
+            icon: const Icon(Icons.shopping_bag, color: Colors.black),
+          ),
         ],
       ),
       drawer: Drawer(
@@ -319,7 +328,8 @@ Widget _featuredList(BuildContext context) {
       ),
       Text('Vegetables')
     ],
-  ));
+    ),
+  );
 }
 
 Widget _wishList(BuildContext context) {
@@ -342,7 +352,8 @@ Widget _wishList(BuildContext context) {
       ),
       Text('Vegetables')
     ],
-  ));
+    ),
+  );
 }
 
 Widget _categoryList(BuildContext context) {
@@ -365,7 +376,8 @@ Widget _categoryList(BuildContext context) {
       ),
       Text('Vegetables')
     ],
-  ));
+    ),
+  );
 }
 
 Widget _brandsList(BuildContext context) {
@@ -388,5 +400,6 @@ Widget _brandsList(BuildContext context) {
       ),
       Text('Vegetables')
     ],
-  ));
+    ),
+  );
 }

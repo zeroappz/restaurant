@@ -32,7 +32,8 @@ class CustomAppBarWidget extends StatelessWidget {
           style: TextStyle(
               color: AppColorsConst.headingText,
               fontWeight: FontWeight.w600,
-              fontSize: Sizes.TEXT_SIZE_20)),
+            fontSize: Sizes.TEXT_SIZE_20),
+      ),
       actions: hasLeading ? trailing : defaultTrailing(),
     );
   }
@@ -42,7 +43,8 @@ class CustomAppBarWidget extends StatelessWidget {
     return InkWell(
         onTap: () {},
         // child: Image.asset()
-        child: Icon(FontAwesomeIcons.search, color: AppColorsConst.black));
+      child: Icon(FontAwesomeIcons.search, color: AppColorsConst.black),
+    );
   }
 
   // defaultTrailing()
